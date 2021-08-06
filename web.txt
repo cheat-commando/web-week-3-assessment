@@ -1,0 +1,23 @@
+How the Internet WORKS
+
+by Carston WORK 
+
+The functionality of the Internet survives because of certain conventions and protocols that every computer has been programmed to follow. Every computer that has Internet access has an IP address (IP: "Internet Protocol"). It is a chain of four numbers, like this one (127.0.0.1). Whenever a computer is commanded by a user to contact another computer, that user's computer must know the IP address of the target computer. In a perfect world, the human user already know the target computer's IP address, but since there are many computers connected to the Internet, and the human brain is horrifyingly bad at remembering more than just a few number chains (how many phone numbers do YOU have memorized?), the human user does NOT know the target computer's IP address. So, instead of that, humans developed easy-to-remember, non-sequitur portmanteaus (like "Instagram") to use as "domain names".
+
+A domain name is linked to the IP address of the target computer (hereafter known as the "server"). Where is the knowledge of this link contained? Why, the Internet of course! But also, if another computer happens to know the IP address that is linked to a certain domain name, then this third party computer can relay that information to the user's computer.
+
+The user's computer (the client) is already cognizant of the server's IP address, then it does not need to search for it. That information is stored on the client, in its Domain Name System (DNS). If the client's DNS does not recogize that domain name, then the client asks the closest router if it recogizes that domain name. If not, then the computer goes past the router to the Internet Service Provider's DNS to see if it knows the domain name. After that, then I guess it goes onto the Internet until it finds a DNS that knows the IP address of the server.
+
+Once that connection has been established, huzzah! The client computer can now talk to the server computer.
+
+
+
+What Happens When You Click on a Link?
+
+also by Carston Work
+
+When a user clicks on a link, if the JavaScript is working like it's supposed to, then the web browser sends a "request" to the server. All of the lovely stuff that I described above happens. When the request FINALLy arrives at the server, the server checks to see if the request matches any of its "endpoints". If it does, then compiles a "response" and sends it back to the client server. The response could be an HTML file, a json file, or whatever else. I'm assuming that the request contains the IP address of the client which is how the server knows where to send the response.
+
+When the response reaches the client, the JavaScript starts to sort through the information that was received. If it's an HTML file, it could have links to other items, such as images, CSS files, and JavaScript files. As the browser looks at this information, it sends requests out to get these files as well, but it doesn't sit and wait for each and every response to return before moving on to the next line of code. It will handle the responses as they come in, but while it waits, it loads the rest of the original response.
+
+This process could take a while (in computer terms), especially if your distant cousin posted a TON of pictures of her vacation to Greece. 

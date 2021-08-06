@@ -1,0 +1,68 @@
+body {
+  background: #ddd;
+  margin: 1rem;
+  padding: 1rem;
+  max-width: 500px;
+  margin: 2rem auto;
+  font-family: "Open Sans", sans-serif;
+}
+
+nav {
+	border-bottom: 2px solid orange;
+}
+
+ol {
+	padding-left: 0;
+}
+
+.crumb {
+	margin-right: 2em;
+	display: inline;
+}
+
+a {
+	color: orange;
+}
+
+a:visited {
+	color: crimson;
+}
+
+
+/* input {
+	display: block;
+	float: left
+} */
+
+img {
+	max-width: 300px;
+	border-bottom: 2px solid crimson;
+	padding-bottom: 2vh;
+}
+
+h1 {
+	border-bottom: 4px solid crimson;
+}
+
+.faves {
+	background-color: rgb(247, 247, 115);
+	font-size : 1cm;
+	width : 4cm;
+	text-align: center;
+}
+
+aside {
+	position:relative;
+	max-width: 4cm;
+	right: 40%;
+	border-right: 2px solid orange;
+}
+
+#city-hall {
+	position: absolute;
+	min-width:10cm;
+}
+
+.infodump {
+	border-bottom: 2px crimson;
+}
